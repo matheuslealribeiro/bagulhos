@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+/*Variáveis*/
+$cor1: #5B91A6;
+$cor2: color #D9D9D9;
+$cor3: color #737373;
+$cor4: color #262626;
+$cor5: color #0D0D0D;
+$desktop: 1200px;
+$notebook: 992px;
+$tablet: 768px;
+$smartphone: 480px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #737373;
+}
+
+
+/*Header - Default*/
+header{
+    margin-top: 0px;
+    padding: 4px;
+    padding-top: 18px;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    h1{
+        font-size: 3em;
+    }
+    p{
+        padding-top: 10px;
+        font-size: 1.2em     
+    }        
+
+}
+
+/*Nav - Default*/
+nav{
+    background-color: rgb(59, 57, 57);
+    font-size: 1.2em;
+    padding: 5px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.39);
+    a{
+        text-decoration: none;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: grey;
+        transition: 0.4s;
+    }
+    
+}
+/* Nav - Smartphone*/
+@media screen and (max-width: $smartphone) {
+    nav{
+        font-size: 1.3em;
+        padding: 10px;
+        width: 100%;
+        a{
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+        
+    }     
+    }
+
+/*Section - Default */
+section{
+    background-color: #D9D9D9;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+    padding: 16px;
+    text-align: justify;
+    /*Article - Default */
+    article h1{
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        text-align: center;    
+    }
+    article > p.intro{
+        font-size: 1.3em;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    article h2{
+        margin-top: 11px;
+        margin-bottom: 11px;
+        font-size: 1.6em;
+        background: linear-gradient(to right, #737373, #D9D9D9);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.212);
+    }
+    article p{
+        text-indent: 10px;
+        padding-bottom: 3px;
+        line-height: 1.4;
+    }
+}
+//Section - Smartphone//
+@media screen and (max-width: $smartphone) {
+    section{
+        article p{
+            font-size: 1.2em;
+        }
+    }
+}
+
+/*Footer - Default*/
+footer{
+    background-color: rgb(59, 57, 57);
+    color: white;
+    font-size: 0.6em;
+    text-align: center;
+}
+
